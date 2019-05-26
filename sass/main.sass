@@ -1,0 +1,469 @@
+@font-face
+	font-family: 'PFCentroSlabPro'
+	src: url('../fonts/PFCentroSlabProMedium/PFCentroSlabProMedium.eot') format('eot'), url('../fonts/PFCentroSlabProMedium/PFCentroSlabProMedium.ttf') format('ttf'), url('../fonts/PFCentroSlabProMedium/PFCentroSlabProMedium.woff') format('woff')
+	font-weight: normal
+
+@import reset
+@import vars
+@import header
+@import footer
+@import media
+
+body
+	font-family: 'Raleway', sans-serif
+
+h1
+	color: white
+	font-family: 'PFCentroSlabPro'
+	font-size: 48px
+	display: inline-block
+	border-bottom: 8px solid $accent-color
+	padding-bottom: 18px
+
+h2
+	color: #2c3949
+	position: relative
+	font-family: 'PFCentroSlabPro'
+	font-size: 30px
+	text-transform: uppercase
+	text-align: center
+	margin-bottom: 65px
+	&:after
+		content: ''
+		width: 165px
+		height: 4px
+		background-color: $accent-color
+		position: absolute
+		bottom: -33px
+		left: 50%
+		transform: translateX(-50%)
+
+h3
+	text-align: center
+	font-family: 'PFCentroSlabPro'
+	font-size: 24px
+	font-weight: 500
+	text-transform: uppercase
+	color: #394b5f
+
+.section-descr
+	color: #333
+	font-weight: 400
+	font-size: 15px
+	line-height: 22px
+	text-align: center
+	margin-bottom: 70px
+	span
+		font-weight: 700
+	mark
+		color: $accent-color
+		font-weight: 700
+		text-decoration: underline
+
+section
+	padding-top: 100px
+	background-color: #f9f9f9
+	position: relative
+	.container
+		padding-bottom: 70px
+	&:before
+		content: ""
+		position: absolute
+		left: 0
+		top: -6px
+		height: 6px
+		width: 100%
+		background-image: url('../img/wave-white.png')
+
+.section-item
+	margin: 0 auto
+	position: relative
+	h4
+		font-family: 'PFCentroSlabPro'
+		font-size: 22px
+		font-weight: 500
+		line-height: 24px
+		text-decoration: underline
+		margin-bottom: 20px
+		a
+			color: $accent-color
+	p
+		color: #111
+		font-size: 15px
+		font-weight: 400
+		line-height: 18px
+
+.dark-section
+	background-color: $main-bgc
+	&:before
+		background-image: url('../img/wave-dark.png')
+	*
+		color: #f9f9f9
+	.section-footer
+		background-color: lighten($main-bgc, 10%)
+
+.section-footer
+	text-align: center
+	padding: 65px 0 60px
+	background-color: #d6d6d6
+
+
+.flex
+	display: flex
+	justify-content: space-between
+
+.button
+	display: inline-block
+	background-color: $accent-color
+	box-shadow: 0 3px 0 #b97200
+	color: #111
+	font-family: 'PFCentroSlabPro'
+	font-size: 20px
+	padding: 14px 35px
+	opacity: 1
+
+
+// ---------------assessment-------------------
+
+#assessment
+	.section-footer
+		background-color: $main-bgc
+	>.container
+		padding-bottom: 0
+
+.assessment-top
+	>div:nth-child(odd)
+		margin: 55px 0 120px
+
+.assessment-bottom
+	background-color: lighten($main-bgc, 10%)
+	margin-top: 110px
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		left: 0
+		top: -99px
+		width: 100%
+		height: 100px
+		background-color: lighten($main-bgc, 10%)
+		clip-path: polygon(50% 0,100% 100%,0 100%)
+	.assessment-logo
+		position: absolute
+		left: 50%
+		top: -50px
+		transform: translateX(-50%)
+		img
+			width: 120px
+			opacity: .3
+	svg
+		width: 150px
+		height: auto
+		position: absolute
+		left: 50%
+		top: -220px
+		transform: translateX(-50%)
+		path
+			fill: lighten($main-bgc, 10%)
+	p
+		color: #f3f3f3
+.assessment-item
+	&:after
+		content: ''
+		position: absolute
+		left: 0
+		bottom: -30px
+		height: 1px
+		background-color: #DEE1E5
+		width: 80%
+
+.asessment-footer
+	padding-top: 60px	
+	>div:nth-child(even)
+		margin-top: 55px
+	.assessment-item
+		&:after
+			content: ''
+			position: absolute
+			left: 0
+			bottom: -30px
+			height: 1px
+			background-color: #546476
+			width: 80%
+
+// -----------------------------DEALS----------------
+
+#deals
+	h3
+		margin-bottom: 75px
+		a
+			color: $accent-color
+			text-decoration: underline
+
+.deal-item
+	text-align: center
+	margin-bottom: 70px
+	.svg-block
+		height: 80px
+		margin-bottom: 60px
+		position: relative
+		svg
+			width: 50%
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			path
+				fill: $accent-color
+	&_title
+		color: #111
+		font-size: 13px
+		font-weight: 700
+		line-height: 16px
+		text-decoration: underline
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			height: 1px
+			background-color: $accent-color
+			width: 40%
+			top: -25px
+			left: 50%
+			transform: translateX(-50%)
+
+// ------------------------accounting_services-----------
+
+#accounting_services
+	.section-item
+		padding-left: 30px
+		p
+			color: #f9f9f9
+	.middle-item
+		padding: 100px 0
+	.accounting_items
+		position: relative
+	.background_elipse
+		position: absolute
+		width: 800px
+		height: 800px
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		background-color: lighten($main-bgc, 3%)
+		border-radius: 50%
+	.book-bg
+		position: absolute
+		width: 130px
+		height: 130px
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		background-color: $accent-color
+		border-radius: 50%
+		svg
+			position: absolute
+			width: 72px
+			height: 73px
+			fill: $main-bgc
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+	svg.arrows
+		fill: $main-bgc
+		position: absolute
+		width: 100px
+		height: 30px
+		left: 50%
+		top: 50%
+		transform: translateY(-50%)
+
+// -----------------------------ADVANTAGES------------------
+
+.conditions
+	display: flex
+	justify-content: center
+	perspective: 600px
+	.condition-item
+		width: 265px
+		margin: 60px 15px 0
+		background-color: $main-bgc
+		padding: 55px 30px
+		text-align: center
+		font-size: 14px
+		line-height: 18px
+		color: #97a4b2
+		font-weight: 400
+		transition: all .7s ease
+		cursor: pointer
+		.condition-img
+			width: 120px
+			height: 120px
+			display: inline-block
+			background-color: $accent-color
+			border-radius: 50%
+			position: relative
+			img
+				width: 80px
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+		.condition-name
+			margin: 35px 0 25px
+			color: #e5e5e5
+			font-size: 16px
+			font-weight: 700
+			text-transform: uppercase
+
+// ---------------------------------how_we_work---------------
+
+.how_we_work-steps
+	display: flex
+	justify-content: center
+	margin-bottom: 80px
+	color: #f9f9f9
+	.how_we_work-step
+		position: relative
+		margin-left: -40px
+		transition: all .5s ease
+		&:hover
+			transform: scale(1.08)
+			z-index: 3
+			path
+				fill-opacity: 0!important
+				stroke-opacity: 1!important
+		svg
+			fill: $accent-color
+			path
+				stroke: $accent-color
+				stroke-width: 4px
+		p:first-letter
+			font-size: 22px
+		.step-inside
+			position: absolute
+			width: 100%
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			display: flex
+			justify-content: center
+			transition: all 2s ease
+			opacity: 0
+			&-on
+				opacity: 1
+			p
+				font-family: 'PFCentroSlabPro'
+				font-weight: 500
+				font-size: 18px			
+			img
+				height: 40px
+				margin-right: 15px
+
+// ----------------------------CALL----------------------
+
+#call
+	padding-bottom: 15px
+.call-slider
+	.employee
+		background-color: #e5e5e5
+		position: relative
+		text-align: center
+		color: #333
+		font-size: 16px
+		margin: 0 17px
+		width: 262px
+		padding: 50px 0
+		border: 2px solid #d6d6d6
+		&-name
+			color: #333
+			font-size: 16px
+			font-weight: 700
+		&-photo
+			display: inline-block
+			margin-bottom: 40px
+			width: 120px
+			height: 120px
+			border-radius: 50%
+			border: 4px solid #d6d6d6
+			overflow: hidden
+			img
+				width: 100%
+		&-position
+			color: #6e7b8b
+			font-size: 13px
+			font-weight: 400
+			margin: 15px 0 28px
+		&-phone
+			font-family: 'Roboto', sans-serif
+			font-weight: 700
+
+// --------------------------reviews------------------------
+#reviews
+	background-color: #e5e5e5
+	&:before
+		background-image: url('../img/wave-gray.png')
+.review
+	text-align: center
+	font-family: 'Raleway', sans-serif
+	color: #333
+	font-weight: 400
+	padding-bottom: 50px
+	&-photo
+		display: inline-block
+		width: 120px
+		height: 120px
+		border-radius: 50%
+		border: 4px solid $accent-color
+		overflow: hidden
+		img
+			width: 100%
+	&-name
+		font-size: 18px
+		margin: 35px 0 17px
+	&-firm
+		color: #6e7b8b
+		font-size: 13px		
+	&-text		
+		font-size: 14px
+		line-height: 20px
+		margin-top: 30px
+
+// ---------------------------progress-------------------
+
+#progress
+	.main-form
+		margin-top: 0
+		background-color: rgba(214, 214, 214, .8)
+		h3
+			text-align: left
+			color: #2c3949
+		p
+			color: #5e6267
+		input
+			background-color: silver
+			box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.4)
+			color: #2c3949
+	.section-title
+		text-align: left
+		&:after
+			left: 0
+			transform: translateX(0)
+	.progress-text
+		color: #333
+		font-size: 15px
+		font-weight: 400
+		line-height: 22px
+	.awards
+		margin-top: 50px
+		.award
+			width: 25%
+			text-align: center
+			margin: 0 15px
+			img
+				height: 72px
+			p
+				font-size: 13px
+				font-weight: 700
+				line-height: 16px
+				margin-top: 30px
